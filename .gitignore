@@ -1,0 +1,17 @@
+# General Ignores + IDE
+.DS_Store
+settings.xml
+WEB-INF
+
+# logs
+logs/*.*
+
+# NPM, Bower, ETC
+**/node_modules/*
+**/bower_components/*
+
+## Ignored Dependencies
+coldbox/*
+testbox/*
+modules/*
+**/apidocs/**
