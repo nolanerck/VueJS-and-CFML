@@ -1,0 +1,14 @@
+version: '2'
+services:
+  db:
+    container_name: popculturetestdb
+    image: percona:5.6
+    volumes:
+      - ./devsetup/:/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: popculturedb
+      MYSQL_USER: cfuser
+      MYSQL_PASSWORD: cfuser
+    ports:
+      - "13306:3306"

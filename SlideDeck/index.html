@@ -83,7 +83,10 @@
 				<section>
 					<h2>Today's Agenda</h2>
 					<ul>
-						<li></li>
+						<li>Getting started with Vue.js</li>
+						<li>A primer on APIs and REST</li>
+						<li>Building APIs in CFML</li>
+						<li>Building your APIs in ColdBox</li>
 					</ul>
 				</section>
 
@@ -95,6 +98,140 @@ Buiding your first REST API with ColdBox
 coldbox create app name=HelloWorldAPI skeleton=rest
 3. Boom. Done.
 
+				<section>
+					<h2>Show of Hands</h2>
+					<ul>
+						<li>Who is brand new to Vue.js?</li>
+						<li>Who is <em>not</em> using the API Manager?</li>
+						<li>Who is <em>not</em> using MVC (ColdBox, Framework1, etc)?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>You're all in the right place</h2>
+					<ul>
+						<li>You don't <em>have</em> to use API Manager.</li>
+						<li>You don't <em>have</em> to have proper MVC code.</li>
+						<li>You don't <em>have</em> to have be an Angular guru to start.</li>
+						<li>...but the more you know is obviously helpful.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>For today's talk</h2>
+					<ul>
+						<li>We're using Vue.js</li>
+						<li>Lucee 5</li>
+						<li>Everything works as-is on Adobe CF too</li>
+						<li>Everything is running via CommandBox</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Vue is...</h2>
+					<ul>
+						<li>JavaScript framework</li>
+						<li>For SPA-like behavior</li>
+						<li>Based on MVVM</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Getting Started With Vue.js</h2>
+					<ul>
+						<li>Vuejs.org</li>
+						<li>"Get Started" documentation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What's an API?</h2>
+					<ul>
+						<li>Application Programming Interface</li>
+						<li>Quasi-generic way to interact with a system</li>
+						<li>Just a bunch of URLs</li>
+						<li>The URLs return data to whatever system requested it</li>
+						<li>Data comes back (hopefully!) in a standard format: XML, SOAP, JSON, etc</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>API vs REST API</h2>
+					<ul>
+						<li>All REST APIs are APIs</li>
+						<li>But not all APIs are RESTful</li>
+						<li>They all <em>do</em> the same thing</li>
+						<li>Just a different style in how you talk to the API</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Non-REST API</h2>
+					<ul>
+						<li>http://sitename/api/getUser.cfm?ID=123</li>
+						<li>http://sitename/api/createUser.cfm</li>
+						<li>http://sitename/api/updateUser.cfm?ID=123</li>
+						<li>http://sitename/api/deleteUser.cfm?ID=123</li>
+						<li>All HTTP "get" requests</li>
+						<li>Can copy/paste all URLs and run them in a browser (for debugging)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>REST API</h2>
+					<ul>
+						<li>http://sitename/api/user/123 (get)</li>
+						<li>http://sitename/api/user/123 (create)</li>
+						<li>http://sitename/api/user/123 (update)</li>
+						<li>http://sitename/api/user/123 (delete)</li>
+						<li>The <em>same</em> URL for all actions.</li>
+						<li>Change the HTTP verb to change the behavior.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>API vs REST API</h2>
+					<ul>
+						<li>So which is best?</li>
+						<li>REST has a more <em>consistent</em> interface out of the box.</li>
+						<li>REST is the current "standard".</li>
+						<li>But under the hood, your code does the same "thing" either way.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Does this mean....?</h2>
+					<ul>
+						<li>...I have to install something on my CF server? - No</li>
+						<li>...I <em>have</em> to use Vue.js? - No</li>
+						<li>...I have to rewrite my whole CF app? - No</li>
+						<li>We'll show several ways to use Vue.js and CFML</li>
+					</ul>
+				</section>
+
+				<section>
+					<p><a href="/Angular_App1_HelloWorld">Your first AngularJS app</a></p>
+				</section>
+
+				<section>
+					<p><a href="/Angular_App2_BasicCFM">Angular + Basic CFM template</a></p>
+				</section>
+
+				<section>
+					<p><a href="/Angular_App3_CFFunction">Angular + CFFunction</a></p>
+				</section>
+
+				<section>
+					<p><a href="/Angular_App4_ReturnFormat">Angular + CFC ReturnFormat</a></p>
+				</section>
+
+				<section>
+					<p><a href="/Angular_App5_Routes">Angular Routes</a></p>
+				</section>
+
+				<section>
+					<p><a href="/api">AngularJS + Taffy</a></p>
+				</section>
 
 
 				<section>
@@ -110,6 +247,25 @@ Building REST APIs
 
 
 
+					</ul>
+				</section>
+
+				<section>
+					<h2>So what's the catch?</h2>
+					<ul>
+						<li>A few new conventions to learn, but they're not terribly hard.</li>
+						<li>If you have lots of strange server mappings, may take a little time to configure.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Other Resources</h2>
+					<ul>
+						<li>South of Shasta - onsite and remote training</li>
+						<li>Vuejs.org</li>			
+						<li>Ortus Solutions</li>
+						<li>coldbox.ortusbooks.com</li>
+						<li>Talk to people at the conference!</li>
 					</ul>
 				</section>
 
