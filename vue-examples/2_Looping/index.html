@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js Looping</title>
+</head>
+<body>
+
+	<div id="myloopingapp">
+		<div v-for="mb in metalBands">
+			{{ mb }}
+		</div>
+	</div>
+
+	<script src="/assets/vue/dist/vue.js"></script>
+	<script>
+		var app = new Vue(
+		{
+			el: '#myloopingapp',
+			data: 
+			{
+				metalBands: [ "Metallica", "Megadeth", "Hatebreed", "King Diamond", "Iron Maiden" ]
+			}
+		});
+	</script>
+</body>
+</html>
