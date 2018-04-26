@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON in Vue</title>
+</head>
+<body>
+
+	<div id="app">
+		<p v-for="g in guitarists">{{ g }}</p>
+	</div>
+
+	<script src="/assets/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:'#app',
+			data:{
+				guitarists:[],
+				text:'Loading...'
+			},
+			created() {
+				fetch( 'http://127.0.0.1:8080/vue-examples/3_JSONExample/guitarists.json' )
+				.then( res => res.json() )
+				.then( res => {
+					this.guitarists = res;
+					console.log('guitarists loaded');
+
+					app.guitarists = this.guitarists;
+					
+				});
+			}
+		});
+	</script>
+</body>
+</html>
