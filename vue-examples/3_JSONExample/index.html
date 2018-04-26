@@ -5,8 +5,11 @@
 </head>
 <body>
 
+	<h2>JSON Guitarists</h2>
 	<div id="app">
-		<p v-for="g in guitarists">{{ g }}</p>
+		<ol>
+			<li v-for="g in guitarists">{{ g }}</li>
+		</ol>
 	</div>
 
 	<script src="/assets/vue/dist/vue.js"></script>
