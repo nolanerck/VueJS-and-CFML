@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js Routes</title>
+</head>
+<body>
+
+	<div id="popCultureApp">
+		<h2>Pop Culture Stuff</h2>
+		<div>
+			<router-link to="/">Home</router-link>
+			<router-link to="/movies">Go to Movies</router-link>
+			<router-link to="/music">Go to Music</router-link>
+		</div>
+
+		<router-view></router-view>
+	</div>
+
+	<script src="/assets/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script>
+		const NotFound = { template: '<p>Page not found</p>' };
+
+		const Home = { template: '<p>Welcome to Vue.js</p>' };
+		const Movies = { template: '<div><h3>Movies</h3><ul><li>Top Gun</li><li>Singles</li><li>Sneakers</li></ul></div>' };
+		const Music = { template: '<div><h3>Synth Pop Bands</h3><ul><li>Depeche Mode</li><li>Kraftwerk</li><li>Yazoo</li><li>Erasure</li><li></li></ul></div>' };
+
+		const routes = {
+		  '/': Home,
+		  '/movies': Movies,
+		  '/music': Music
+		};
+
+		const _routes = [
+		  { path: '/', component: Home },
+		  { path: '/movies', component: Movies },
+		  { path: '/music', component: Music }
+		];
+
+		const router = new VueRouter({
+			routes: _routes 
+		});
+
+		const app = new Vue( { router } ).$mount( '#popCultureApp' );
+	</script>
+</body>
+</html>

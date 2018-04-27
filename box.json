@@ -1,0 +1,13 @@
+{
+    "name":"VueJS and CFML basic examples",
+    "version":"1.0.0",
+    "author":"Nolan Erck",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/nolanerck/VueJS-and-CFML"
+    },
+    "slug":"vuejs-and-cfml-basic-examples",
+    "shortDescription":"Slides and Code samples from my talk 'Connecting Vue.js and CFML with ColdBox'",
+    "dependencies":{},
+    "devDependencies":{}
+}
