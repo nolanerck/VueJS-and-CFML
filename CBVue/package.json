@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "coldbox-elixir": "^1.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
+  },
+  "dependencies": {}
+}

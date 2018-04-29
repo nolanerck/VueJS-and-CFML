@@ -21,7 +21,7 @@
 				text:'Loading...'
 			},
 			created() {
-				fetch( 'http://127.0.0.1:8080/vue-examples/3_JSONExample/guitarists.json' )
+				fetch( 'guitarists.json' ) // or http://sitename/someServerSideCode/guitarists.json
 				.then( res => res.json() )
 				.then( res => {
 					this.guitarists = res;

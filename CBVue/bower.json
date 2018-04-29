@@ -1,0 +1,11 @@
+{
+  "name": "cbvue",
+  "description": "",
+  "authors": [],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome-sass": "^4.6.2",
+    "vue": "^1.0.27",
+    "vue-resource": "^1.0.3"
+  }
+}

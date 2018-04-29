@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON in Vue</title>
+</head>
+<body>
+
+	<h2>JSON Guitarists</h2>
+	<div id="app">
+		<ol>
+			<li v-for="c in aryCustomers">{{ c }}</li>
+		</ol>
+	</div>
+
+	<script src="/assets/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el:'#app',
+			data:{
+				aryCustomers:[],
+				text:'Loading...'
+			},
+			created() {
+				fetch( 'http://127.0.0.1:9999/LegacyCFML/1customers.cfm' ) 
+				.then( res => res.json() )
+				.then( res => {
+					this.aryCustomers = res;
+					console.log('customers loaded');
+
+					app.aryCustomers = this.aryCustomers;
+					
+				});
+			}
+		});
+	</script>
+</body>
+</html>

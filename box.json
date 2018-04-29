@@ -8,6 +8,11 @@
     },
     "slug":"vuejs-and-cfml-basic-examples",
     "shortDescription":"Slides and Code samples from my talk 'Connecting Vue.js and CFML with ColdBox'",
-    "dependencies":{},
-    "devDependencies":{}
+    "dependencies":{
+        "CBVue":"github:coldbox-samples/cbvue"
+    },
+    "devDependencies":{},
+    "installPaths":{
+        "CBVue":"CBVue"
+    }
 }
